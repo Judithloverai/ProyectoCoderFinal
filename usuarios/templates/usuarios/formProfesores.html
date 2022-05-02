@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block contenido %}
+    <h1>Profesores</h1>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+    style="display: flex; flex-directon: column; max-width: 60vw; margin-inline: auto;"
+        {{ form }}
+        <input type="submit" value="Enviar">
+    </form>
+{% endblock contenido %}
