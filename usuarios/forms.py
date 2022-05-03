@@ -1,4 +1,4 @@
-from django.forms import forms 
+from django import forms 
 
 class FormProfesor(forms.Form):
     nombre = forms.CharField(max_length=200)
