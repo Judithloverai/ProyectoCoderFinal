@@ -3,9 +3,10 @@
 {% block contenido %}
     <h1>Profesores</h1>
 
-    <form method="POST" action="">
+    <form method="POST" action=""
+        style="display: flex; flex-direction: column; max-width: 60vw; margin-inline: auto;"
+    >
         {% csrf_token %}
-    style="display: flex; flex-directon: column; max-width: 60vw; margin-inline: auto;"
         {{ form }}
         <input type="submit" value="Enviar">
     </form>

@@ -28,7 +28,7 @@ def nuevo_profesor(request):
             )
 
             profe.save()
-            return redirect("Profesores")
+            return redirect("InicioUsuarios")
 
     mi_form = FormProfesor()
 
