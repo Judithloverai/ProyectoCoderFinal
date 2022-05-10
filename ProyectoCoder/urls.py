@@ -18,9 +18,11 @@ Prueba
 """
 from django.contrib import admin
 from django.urls import path, include
+from usuarios.views import inicio
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', inicio, name="Inicio"),
     path('pagina/', include("pagina.urls")),
-     path('usuarios/', include("usuarios.urls")),
+    path('usuarios/', include("usuarios.urls")),
 ]
